@@ -1,0 +1,18 @@
+.root{
+  font-size: 20px;
+}
+
+.wrapper-01 {
+  width: 10vw;
+  background-color: brown;
+}
+
+.wrapper-01 > p {
+  font-size: 1em;
+}
+
+.wrapper-02 > .inner-01 > p {
+background-color: aquamarine;
+font-size: 2rem;
+width: 20vh;
+}

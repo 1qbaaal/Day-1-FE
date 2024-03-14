@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style> 
+        body{
+          padding-left: 100px;
+        }
+          table, tr, th, td{
+            border: 1px solid salmon
+          }
+        </style>
+</head>
+<body>
+
+  <h1>Intoduce Front End!</h1>  <!-- h (Heading): Biasa nya digunakan untuk membuat judul/Tittle dalam html-->
+  <h2>Intoduce Front End!</h2> <!-- Heading memiliki 6 kategori, semakin kebawah tulisan akan semakin mengecil. paling besar di <h1> -->
+  <h3>Intoduce Front End!</h3>
+  <h4>Intoduce Front End!</h4>
+  <h5>Intoduce Front End!</h5> 
+  <h6>Intoduce Front End!</h6> 
+  
+  <!-- Cara pembuatanParagraf-->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quibusdam nemo, explicabo cumque assumenda necessitatibus veniam nulla inventore voluptatum tempora error! Quae autem temporibus tempore soluta possimus, sed nulla voluptatum?
+  </p>
+  <hr /> <!-- hr disini berguna untuk membuat garis pembatas bawah -->
+
+  <!-- Text Formating-->
+  <b>Ini bold</b></br> <!-- semua perintah dibawah ini untuk memformat text, </br> (break) digunakan untuk membreak kalimat atau membuat paragraf baru-->
+  <strong> Ini Strong</strong></br>
+  <i> Ini italic</i></br>
+  <em> Ini Emphasize</em></br>
+  <mark> Ini Mark</mark></br>
+  <small> Ini Small</small></br>
+  <del>Deleted</del></br>
+  <ins>Ini Inserted</ins></br>
+  <sub> Ini Subscript</sub></br>
+  <sup>Ini Superscript</sup></br>
+
+
+  <!-- UNORDERED LIST TAG-->
+  <!-- Contoh-->
+
+  <h1> Darftar Belanja:</h1>
+  <ul>
+    <li>Beras</li> <!-- undorered list tag berguna untuk list symbol-->
+    <li>Kacang</li>
+    <li>Bacang</li>
+    <li>Minyakkkk</li>
+  </ul>
+  <ol>
+    <li>Budi</li> <!-- ordered list tag berguna untuk list berupa angka -->
+    <li>Anjas</li>
+    <li>Dawi</li>
+    <li>Seto</li>
+  </ol>
+
+  <!-- TABLE 
+        tr: table row -> Membuat baris
+        td: table data -> Membuat kolom
+        th: table head
+        colspan: merge kolom
+        rowspan: merge row
+      -->
+
+      <table>
+        <tr>
+          <th>
+            Tittle
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Hobby
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2"> <!-- colspan: untuk merge colom, 2 disamping dimaksud 2 colom yang di merge-->
+            01
+          </td>
+          <td>
+            Jaung
+          </td>
+          <td>
+            Mega wheel
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2"> <!-- rowpan: untuk merge row, 2 disamping dimaksud 2 row yang di merge-->
+            02
+          </td>
+          <td>
+            Seto
+          </td>
+          <td>
+            PHP cewe
+          </td>
+        </tr>
+        <td></td>
+          03
+        </td>
+        <td>
+          Dawi
+        </td>
+        <td>
+          Bola
+        </td>
+      </tr>
+      </table>
+
+<!-- 
+  ANCHOR TAG 
+-->
+
+<p>
+  <a href="https://www.purwhadhika.com" target="_blank"> <!-- jika ditambah target maka page akan muncul di halaman baru, jika tidak page akan dibuka di page yang sama-->
+      Purwadhika.com
+  </a>
+     
+</p>
+<p>
+  <a href="./Fundamental/Module 1/Day-2"> <!-- Untuk mengambil file html yang ada di komputer kita-->
+    Other Page
+  </a>
+</p>
+
+<!--
+  IMAGES TAG 
+-->
+      
+<img
+src="https://images.bisnis.com/posts/2023/11/24/1716892/deretan_gunung_tertinggi_di_indonesia_salah_satunya_gunung_semeru_-_dok._shutterstock_1700805928.jpg"
+width="300px"
+height="200px"
+alt="Gambar Gunung"
+/>
+
+<figure>
+  <img
+  src="https://images.bisnis.com/posts/2023/11/24/1716892/deretan_gunung_tertinggi_di_indonesia_salah_satunya_gunung_semeru_-_dok._shutterstock_1700805928.jpg"
+  width="300px"
+  height="200px"
+  alt="Gambar Gunung"
+  />
+  <figcaption>
+    Gunung Bromo, 2014
+  </figcaption>
+</figure>
+
+<!--
+  FORM
+-->
+
+<form>
+  <input type="text"
+  placeholder="Input Your Username"
+  /></br>
+  <input type="password"
+  placeholder="Input Your Password"
+  /></br>
+  <input type="email"
+  placeholder="Input Your Email"
+  /></br>
+  <input type="radio"
+  /> Married
+  <input type="radio"
+  /> Joms
+  <input type="checkbox"
+  /> Graduated
+  <input type="submit"
+        value="Login12345"
+  />
+  <button
+  type="submit"
+  >
+    submit <img
+    src="https://images.bisnis.com/posts/2023/11/24/1716892/deretan_gunung_tertinggi_di_indonesia_salah_satunya_gunung_semeru_-_dok._shutterstock_1700805928.jpg"
+    width="10px"
+    height="10px"
+    alt="Gambar Gunung"
+    />
+</button>
+</form>
+
+<!-- 
+  Select Data
+-->
+<select>
+  <option>Banten</option>
+  <option>DKI Jakarta</option>
+  <option>Jawa Barat</option>
+  <option>Jawa Tengah</option>
+  <option>Jawa Timur</option>
+</select>
+
+<fieldset>
+  <legend> Form Login</legend>
+
+  <label>
+    Username
+  </label>
+  <input type="text"/>
+</fieldset>
+
+<div>
+  <h1>
+    Hellow
+  </h1>
+</div>
+
+<!-- 
+  SIFAT ELEMENT DALAM HTML, untuk menentukan tulisan tersebut horizontal atau vertikal.
+-->
+<!-- 
+  Inline Element: Width = Content; Height = Content
+  Block Element: Width = 100% Viewport; Height = Content
+-->
+<!-- 
+  Inline Element
+-->
+<span style="background-color: antiquewhite;">
+  A
+</span>
+<span>
+  B
+</span>
+
+<!-- 
+  Block Element
+ -->
+ <div style="background-color: aquamarine;">
+  Bebas
+ </div>
+ <h1>Hello</h1><h1>World</h1>
+
+
+</body>
+</html>

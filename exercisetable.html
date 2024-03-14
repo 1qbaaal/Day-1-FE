@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    No 
+                </th>
+                <th>
+                    Name
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+        </tbody>
+    </table>
+</body>
+<script>
+    const cats = ['Smiling', 'Happy', 'Ken']
+
+    function ShowCats(){
+        let print = ''
+
+        // Generate TR & TD
+        cats.forEach((item, index) => {
+            print += `
+                <tr>
+                    <td>
+                        ${index+1}
+                    </td>
+                    <td>
+                        ${item}
+                    </td>
+                </tr>
+            `
+        })
+
+        // TR TD disisipkan ke elementId bernama tableData
+        document.getElementById('tableData').innerHTML = print
+    }
+
+    ShowCats()
+</script>
+</html>

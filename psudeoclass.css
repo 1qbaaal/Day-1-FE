@@ -1,0 +1,17 @@
+a:link{
+  color: green;
+  background-color: aqua;
+}
+
+a:visited{
+  color: rebeccapurple;
+  background-color: antiquewhite;
+}
+
+.btnSubmit{
+  background-color: gray;
+}
+
+.btnSubmit:hover{
+  background-color: aqua;
+}

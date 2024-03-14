@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend> Form Login</legend>
+  
+    <label>
+      Add ToDo
+    </label>
+    <input id="addToDo" type="text" placeholder="Input Your ToDo">
+    <button onclick="addToDo()"> Submit </button>
+  </fieldset>
+  
+  <table>
+    <thead>
+        <tr>
+            <th> No </th>
+            <th> ToDoList </th>
+        </tr>
+    </thead>
+    <tbody id="tableData">
+    </tbody>
+</table>
+</body>
+
+<script>
+  const toDo = ['Berenang', 'Bultang', 'Mancing']
+
+  function TodoList(){
+    let print = ''
+
+    toDo.forEach((item, index) => {
+      print += `
+            <tr>
+              <td> ${index+1}</td> 
+              <td> ${item}</td>
+              <td> <button onclick="deleteToDo(${index})"> Upus </button> </td>
+            </tr>
+          `
+    })
+
+    document.getElementById('tableData').innerHTML = print
+
+  }
+  
+  function addToDo(){
+    const newToDo = document.getElementById('addToDo').value
+    toDo.push(newToDo)
+  
+    TodoList()
+  }
+
+  function deleteToDo(index){
+    const isConfirm = confirm('Are You Sure to Delete Data?')
+    if(isConfirm === true){
+      toDo.splice(index, 1)
+      TodoList()
+    } 
+  }
+
+TodoList()
+</script>
+</html>
